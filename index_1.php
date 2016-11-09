@@ -6,9 +6,7 @@
   <title>Made with Thimble</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/jquery-3.1.1.js" ></script>
   <script src="js/jQery.js"></script>
-  <script src="js/script-3.js"></script>  
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
