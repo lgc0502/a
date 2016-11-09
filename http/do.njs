@@ -8,7 +8,7 @@ var name=require('./name.json');
 console.log('Content-type: text/html; charset=utf-8\n');
 
 if(name[param.id]==undefined){
-    console.log('<h1>who are you?<h1>');
+    console.log('<h1>who are you<h1>');
 }
 
 /* return normal HTML content */
