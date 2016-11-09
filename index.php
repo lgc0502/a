@@ -18,9 +18,9 @@
 <body>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">1515</a>
-    <a href="index_1.html">Our Team</a>
-    <a href="index_2.html">新增物品</a>
+    <a href="index.php">1515</a>
+    <a href="index_1.php">Our Team</a>
+    <a href="index_2.php">新增物品</a>
     <a>Q and A</a>
   </div>
   <div id="main">

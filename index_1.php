@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Made with Thimble</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery-3.1.1.js" ></script>
   <script src="js/jQery.js"></script>
   <script src="js/script-3.js"></script>  
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">1515</a>
-    <a href="index_2.html">新增物品</a>
-    <a href="index_1.html">Our Team</a>
+    <a href="index.php">1515</a>
+    <a href="index_2.php">新增物品</a>
+    <a href="index_1.php">Our Team</a>
     <a>Q and A</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
