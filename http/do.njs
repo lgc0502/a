@@ -12,4 +12,7 @@ if(name[param.id]==undefined){
 }
 
 /* return normal HTML content */
-console.log('<h1>Hello,'+' your must be <font color=blue>'+name[param.id]+'</font></h1>'); 
+console.log('<h1>Hello,'+' your must be <font color=blue>'+name[param.id]+'</font></h1>');
+
+
+
