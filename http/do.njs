@@ -10,6 +10,10 @@ console.log('Content-type: text/html; charset=utf-8\n');
 if(name[param.id]==undefined){
     console.log('<h1>who are you<h1>');
 }
-
 /* return normal HTML content */
-console.log('<h1>Hello,'+' your must be '+name[param.id]+'</h1>'); 
+else  console.log('<h1>Hello,'+' your must be '+name[param.id]+'</h1>');
+
+if(name[param.id2]==undefined){
+    console.log('<h1>who are you<h1>');
+    }
+else console.log('<h1>Hello,'+' your must be '+name[param.id2]+'</h1>');

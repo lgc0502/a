@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style_itempost.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery-3.1.1.js" ></script>
   <script src="js/jQery.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -24,7 +25,8 @@
   <span class="opennav" onclick="openNav()"> &#9776;</span>
 </body>
 <br><br><br><br><br><br>
-<div class="row">
+
+<div class="row" id="main">
   <div class="col-xs-2">
   排版用欄位
   </div>
