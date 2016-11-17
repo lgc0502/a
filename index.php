@@ -59,15 +59,16 @@
     	<img id="search" src="http://www.century21.com.tw/mobile/images/menu/menu_search_page.png">
     	<input id="search-box" type="text" name="search-box" />
 
+	<!--login button-->
+	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>	
+	<!---->
 
+	
 	<!--show fb login status-->
 	<div id="status">
 	</div>
 	<!---->
 
-	<!--login button-->
-	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>	
-	<!---->
 
     <div class="blueberry">
       <ul class="slides">
