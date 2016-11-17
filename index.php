@@ -163,8 +163,6 @@
     });
   }
 </script>
-
-
 <!--end of facebook login block-->
 
 
