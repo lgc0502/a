@@ -56,18 +56,32 @@
       </div>
       <div class="form-group">
         <label for="ItemInfo" >商品說明</label>
-        <textarea class="form-control" id="ItemInfo" rows="4"></textarea>
+        <textarea class="form-control" id="ItemInfo" name="ItemInfo" rows="4"></textarea>
       </div>
-
       <button type="submit" class="btn btn-primary" id="send">Submit</button><br><br>
     </form>
     <?php
-      echo "HI";
-      if (!empty($_POST['ItemName'])){
-        echo $_POST['ItemName'];
-        echo $_POST['ItemCategory'];
-        echo "<img src='".$_POST['ImgUrl']."'>";
+      include 'mysql_config.php';
+      $conn=new mysqli($servername,$username,$password,$dbname);
+      if ($conn->connect_errno) {
+          echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
       }
+      else echo "connect";
+      if (!empty($_POST['ItemName'])){
+        echo $_POST['ItemName'].'<br>';
+        echo $_POST['ItemCategory'].'<br>';
+        echo "<img src='".$_POST['ImgUrl']."' height=\"42\" width=\"42\">".'<br>';
+          echo $_POST['ItemInfo'].'<br>';
+          $conn->query ("INSERT INTO commodity (ItemName,ItemCategory,ImgUrl,ItemInfo) VALUES ('".$_POST['ItemName']."','".$_POST['ItemCategory']."','".$_POST['ImgUrl']."','".$_POST['ItemInfo']."')");
+
+      }
+    $result=$conn->query("select * from commodity ");
+    $row=$result->fetch_assoc();
+    echo "<table>";
+    while($row=$result->fetch_assoc()){
+        echo '<tr><td>'.$row['ItemName'].'</td><td>'.$row['ItemInfo'].'</td><td>'.$row['PostTime'].'</td></tr>';
+    }
+    echo "</table>";
     ?>
   </div>
   <div class="col-xs-3">
