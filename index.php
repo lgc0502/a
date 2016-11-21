@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jQery.js"></script>
   <script src="js/script-3.js"></script>     
+  <script src="https://use.fontawesome.com/488b28b092.js"></script>
   <script>
   $(window).load(function() {
     $('.blueberry').blueberry();
@@ -79,6 +80,8 @@
   </div>
 
   <footer id="main">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i><br>
       Copyright © 2016年 1515Team. All rights reserved.
   </footer>
   <div id="abgne_float_ad" >

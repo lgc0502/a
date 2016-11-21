@@ -335,14 +335,15 @@ input{
 .blueberry .pager li.active a span { background: #404040; }
 
 footer{
-    display:block;
+    color:white;
+    text-align:center;
     background:white;
     position:relative;
-    height:60px;
+    height:120px;
     margin-top:0;
     bottom:0;
     width:100%;
     margin:0;
     padding:10px;
-    background-color:#d0d0d0;
+    background-color:black;
 }

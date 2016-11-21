@@ -341,11 +341,11 @@ footer{
     display:block;
     background:white;
     position:relative;
-    height:60px;
+    height:80px;
     margin-top:0;
     bottom:0;
     width:100%;
     margin:0;
     padding:10px;
-    background-color:#d0d0d0;
+    background-color:black;
 }
