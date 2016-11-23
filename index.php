@@ -85,7 +85,7 @@
       Copyright © 2016年 1515Team. All rights reserved.
   </footer>
   <div id="abgne_float_ad" >
-    <img src="http://dl.stickershop.line.naver.jp/products/0/0/1/1161549/android/stickers/6580136.png" width="200" height="200" />
+   // <img src="http://dl.stickershop.line.naver.jp/products/0/0/1/1161549/android/stickers/6580136.png" width="200" height="200" />
   </div>
 
 
