@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jQery.js"></script>
+  <script src="js/script-3.js"></script> 
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
@@ -18,7 +19,7 @@
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
   
-  
+  <div id="main"> 
   <div class="small" id="top"></div>
   <div class="top" id="qa"><a href="index.html"  style="color:#7B7B7B;">Home</a></div>
   <div class="title" id="A">A</div>
@@ -35,7 +36,7 @@
   <img class="photo" id="num3" src="http://imgur.com/d5NyYaC.png">
   <img class="photo" id="num4" src="http://imgur.com/RAwoTvO.png">
   <img class="photo" id="num5" src="http://imgur.com/T6p91jr.png">
-  
+  </div>
   
  
 
