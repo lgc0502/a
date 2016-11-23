@@ -15,6 +15,9 @@ if(name[param.id]==undefined){
 console.log('<h1>Hello,'+' your must be <font color=blue>'+name[param.id]+'</font></h1>');
 =======
 /* return normal HTML content */
+<<<<<<< HEAD
+console.log('<h1>Hello,'+' your must be <font color=blue>'+name[param.id]+'</font></h1>'); 
+=======
 else  console.log('<h1>Hello,'+' your must be '+name[param.id]+'</h1>');
 
 if(name[param.id2]==undefined){

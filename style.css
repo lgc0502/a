@@ -1,7 +1,9 @@
+
 body {
   margin:0;
   font-family: "Open Sans", sans-serif;
   width: 100%;
+  cursor:url('https://raw.githubusercontent.com/hbd1019/1019/master/1476854874114..cur'),auto;
 }
 a{
   text-decoration:none;
@@ -11,6 +13,7 @@ a:hover{
   /*background-color: #BEBEBE;*/
 }
 input{
+  position:absolute;
   font-size: 30px;
   top:85px;
   left:600px;
@@ -68,8 +71,8 @@ input{
 }
 .tt{
   position:absolute;
-  top:10px;
-  left:100px;
+  top:-10px;
+  left:50px;
   font-size: 50px;
 }
 #text{
@@ -335,11 +338,10 @@ input{
 .blueberry .pager li.active a span { background: #404040; }
 
 footer{
-    color:white;
-    text-align:center;
+    display:block;
     background:white;
     position:relative;
-    height:120px;
+    height:80px;
     margin-top:0;
     bottom:0;
     width:100%;
