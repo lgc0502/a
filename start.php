@@ -19,7 +19,7 @@
 </div>
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Demo</h3>
+  <h3>Demo</h3>
   <p>I want a girlfriend QQ</p>
 </div>
 
@@ -49,7 +49,7 @@
 
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">COOL!</span>
+    <span class="border">Let's 1515 !</span>
   </div>
 </div>
 
