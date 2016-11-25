@@ -9,43 +9,13 @@
   <script src="js/jQery.js"></script>
   <script src="js/script-3.js"></script>     
   <script src="https://use.fontawesome.com/488b28b092.js"></script>
-  <script>
-  $(window).load(function() {
-    $('.blueberry').blueberry();
-    });
-    
-    // 當網頁載入完
-    $(window).load(function(){
-      var $win = $(window),
-          $ad = $('#abgne_float_ad').css('opacity', 0).show(),	// 讓廣告區塊變透明且顯示出來
-          _width = $ad.width(),
-          _height = $ad.height(),
-          _diffY = 20, _diffX = 20,	// 距離右及下方邊距
-          _moveSpeed = 800;	// 移動的速度
-
-      // 先把 #abgne_float_ad 移動到定點
-      $ad.css({
-        top: $(document).height(),
-        left: $win.width() - _width - _diffX,
-        opacity: 1
-      });
-
-      // 幫網頁加上 scroll 及 resize 事件
-      $win.bind('scroll resize', function(){
-        var $this = $(this);
-
-        // 控制 #abgne_float_ad 的移動
-        $ad.stop().animate({
-          top: $this.scrollTop() + $this.height() - _height - _diffY,
-          left: $this.scrollLeft() + $this.width() - _width - _diffX
-        }, _moveSpeed);
-      }).scroll();	// 觸發一次 scroll()
-    });
-    
-  </script>
+  <link rel="stylesheet" type="text/css" href="Semantic-UI/dist/semantic.min.css">
+  <script src="Semantic-UI/dist/semantic.min.js"></script>
 </head>
 
 <body>
+  
+  <h1 id="tt"><p>Exchange</p></h1>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">1515</a>
@@ -56,11 +26,11 @@
   <div id="main">
     <div class="small" id="top">
     </div>
-    	<h1 id="tt"><p>Exchange</p></h1>
     	<img id="search" src="http://www.century21.com.tw/mobile/images/menu/menu_search_page.png">
     	<input id="search-box" type="text" name="search-box" />
-
-	<!--login button-->	
+  <button class="ui violet basic button">Violet</button>
+	<button class="ui blue basic button">Blue</button>
+  <!--login button-->	
 
 	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
 
@@ -80,8 +50,8 @@
   </div>
 
   <footer id="main">
-      <i class="fa fa-facebook" aria-hidden="true"></i>
-      <i class="fa fa-instagram" aria-hidden="true"></i><br>
+      <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-instagram fa-2x" aria-hidden="true"></i><br>
       Copyright © 2016年 1515Team. All rights reserved.
   </footer>
   <div id="abgne_float_ad" >
