@@ -49,7 +49,7 @@
 
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">Let's 1515 !</span>
+    <span class="border"><a href="index.php">Let's 1515 !</a></span>
   </div>
 </div>
 

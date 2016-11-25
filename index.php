@@ -15,7 +15,6 @@
 
 <body>
   
-  <h1 id="tt"><p>Exchange</p></h1>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">1515</a>
@@ -26,11 +25,10 @@
   <div id="main">
     <div class="small" id="top">
     </div>
+      <h1 id="tt" style= "left:10%"><p>Exchange</p></h1>
     	<img id="search" src="http://www.century21.com.tw/mobile/images/menu/menu_search_page.png">
-    	<input id="search-box" type="text" name="search-box" />
-  <button class="ui violet basic button">Violet</button>
-	<button class="ui blue basic button">Blue</button>
-  <!--login button-->	
+      <input id="search-box" type="text" name="search-box" />
+ <!--login button-->	
 
 	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
 

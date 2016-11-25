@@ -8,6 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jQery.js"></script>
   <script src="js/script-3.js"></script> 
+  <script src="https://use.fontawesome.com/488b28b092.js"></script>
+  <link rel="stylesheet" type="text/css" href="Semantic-UI/dist/semantic.min.css">
+  <script src="Semantic-UI/dist/semantic.min.js"></script>
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
