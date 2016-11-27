@@ -1,0 +1,71 @@
+.eins{
+  background-size:cover;
+  height:100vh;
+  background-image:url("https://github.com/StanleyHuangEE/wp2016/blob/gh-pages/thinking.jpg?raw=true");
+  text-align:center;
+  padding:180px 0;
+  font-size:600%;
+  font-family: 'Merriweather Sans', sans-serif;
+  color:white;
+}
+
+.zwei{
+  background-size:cover;
+  height:100vh;
+  background-color:#5bb4e5;
+  text-align:center;
+  padding:100px 0;
+  font-size:500%;
+  font-family: 'Merriweather Sans', sans-serif;
+  color:white;
+  }
+
+.drei{
+  background-size:cover;
+  height:100vh;
+  background-color:white;
+  text-align:center;
+  padding:40px 0;
+  font-size:500%;
+  font-family: 'Merriweather Sans', sans-serif;
+  color:rgb(52,78,80);
+}
+
+p{
+  font-size:50%;
+  padding:10px 0;
+}
+
+.drei img{
+  border-radius:50%;
+}
+
+.vier{
+  background-size:cover;
+  height:100vh;
+  background-color:#c4ebef;
+  text-align:center;
+  padding:100px 0;
+  font-size:500%;
+  font-family: 'Merriweather Sans', sans-serif;
+  color:rgb(52,78,8);
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+footer{
+    display:block;
+    background:white;
+    position:relative;
+    height:60px;
+    margin-top:0;
+    bottom:0;
+    width:100%;
+    margin:0;
+    padding:10px;
+}
+
+
