@@ -80,19 +80,7 @@ input{
   top:500px;
   left:-5px;
 }
-#search-box {
-  width: 400px;
-  background: #E6E6E6 no-repeat 1px 1px;
-  padding: 1px 1px 3px 22px;
-}
-#search{
-  position:absolute;
-  top:85px;
-  left:550px;
-  height:40px;
-  width:40px;
-  
-}
+
 .ph{
   position:absolute;
   top:180px;
@@ -277,9 +265,24 @@ input{
   .sidenav a {font-size: 18px;}
 }
 
+#logo {
+  position:absolute;
+  top:50px;
+  left:50px;
+  width:200px;
+  height:60px;
+
+}
 #main {
     transition: margin-left .5s;
     padding: 16px;
+    position:absolute;
+    top:630px;
+    left:800px;
+    width:200px;
+    height:60px;
+  
+
 }
 
 .blueberry { margin: 0 auto; }

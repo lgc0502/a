@@ -47,7 +47,8 @@
   </div>
 </div>
 
-<div class="bgimg-1">
+
+<div class="bgimg-4">
   <div class="caption">
     <span class="border"><a href="index.php">Let's 1515 !</a></span>
   </div>

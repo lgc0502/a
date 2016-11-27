@@ -17,17 +17,15 @@
   
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.php">1515</a>
+    <a href="index.php">home</a>
     <a href="index_1.php">Our Team</a>
-    <a href="index_2.php">新增物品</a>
+    <a href="index_2.php">exchange now</a>
     <a>Q and A</a>
   </div>
-  <div id="main">
-    <div class="small" id="top">
-    </div>
-      <h1 id="tt" style= "left:10%"><p>Exchange</p></h1>
-    	<img id="search" src="http://www.century21.com.tw/mobile/images/menu/menu_search_page.png">
-      <input id="search-box" type="text" name="search-box" />
+  <div id="logo">
+    <img src="http://imgur.com/HPtTFUN.png" />
+  </div>
+    
  <!--login button-->	
 
 	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
@@ -49,11 +47,10 @@
 
   <footer id="main">
       <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-      <i class="fa fa-instagram fa-2x" aria-hidden="true"></i><br>
-      Copyright © 2016年 1515Team. All rights reserved.
+      <i class="fa fa-instagram fa-2x" aria-hidden="true"></i><br><br><br>
+       Copyright © 2016年 1515Team. All rights reserved.
   </footer>
   <div id="abgne_float_ad" >
-   // <img src="http://dl.stickershop.line.naver.jp/products/0/0/1/1161549/android/stickers/6580136.png" width="200" height="200" />
   </div>
 
 
