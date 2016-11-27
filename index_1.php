@@ -34,21 +34,19 @@
   </div>
   <div class="context" id="num44">張哲<p>NCKUCSIE<p>Interest:PLAY?<p>motto:KKK</div>
   <div class="context" id="num55">Xu Yan-Ting<p>NCKUCSIE<p>Interest:絕對是coding<p>motto:再吵 把你翻過去喔</div>
-<<<<<<< HEAD:index_1.html
   <img class="photo" id="num1" src="http://imgur.com/YSYaJdy.png" onMouseOver="this.src='http://www.daliulian.net/imgs/image/67/6797064.jpg'" onMouseOut="this.src='http://imgur.com/YSYaJdy.png'">
   <img class="photo" id="num2" src="http://imgur.com/LHoO8NJ.png" onMouseOver="this.src='http://www.daliulian.net/imgs/image/67/6797064.jpg'" onMouseOut="this.src='http://imgur.com/LHoO8NJ.png'">
   <img class="photo" id="num3" src="http://imgur.com/d5NyYaC.png" onMouseOver="this.src='http://www.daliulian.net/imgs/image/67/6797064.jpg'" onMouseOut="this.src='http://imgur.com/d5NyYaC.png'">
   <img class="photo" id="num4" src="http://imgur.com/RAwoTvO.png" onMouseOver="this.src='http://www.daliulian.net/imgs/image/67/6797064.jpg'" onMouseOut="this.src='http://imgur.com/RAwoTvO.png'">
   <img class="photo" id="num5" src="http://imgur.com/T6p91jr.png" onMouseOver="this.src='http://www.daliulian.net/imgs/image/67/6797064.jpg'" onMouseOut="this.src='http://imgur.com/T6p91jr.png'">
   
-=======
   <img class="photo" id="num1" src="http://imgur.com/YSYaJdy.png">
   <img class="photo" id="num2" src="http://imgur.com/LHoO8NJ.png">
   <img class="photo" id="num3" src="http://imgur.com/d5NyYaC.png">
   <img class="photo" id="num4" src="http://imgur.com/RAwoTvO.png">
   <img class="photo" id="num5" src="http://imgur.com/T6p91jr.png">
   </div>
->>>>>>> 0550ed03bd694d55097ce760a2c96e4efb888327:index_1.php
+
   
  
 
