@@ -51,7 +51,6 @@
   <img class="photo" id="num4" src="http://imgur.com/RAwoTvO.png">
   <img class="photo" id="num5" src="http://imgur.com/T6p91jr.png">
   </div>
-  
  
 
 </body>
