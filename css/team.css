@@ -22,13 +22,13 @@
 
 .drei{
   background-size:cover;
-  height:100vh;
-  background-color:white;
+  height:120vh;
   text-align:center;
   padding:40px 0;
   font-size:500%;
   font-family: 'Merriweather Sans', sans-serif;
   color:rgb(52,78,80);
+  z-index:-1;
 }
 
 p{
@@ -36,8 +36,30 @@ p{
   padding:10px 0;
 }
 
+
 .drei img{
+  width:300px;
+  height:300px;
   border-radius:50%;
+  -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px black);
+  -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+
+.drei img:hover{
+	transition: opacity 0.9s;
+  -ms-transition: opacity 0.9s;
+  /* IE 9 */
+  -moz-transition: opacity 0.9s;
+  /* Firefox */
+  -webkit-transition: opacity 0.9s;
+  /* Safari and Chrome */
+  -o-transition: opacity 0.9s;
+  /* Opera */
+  -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px black);
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
 }
 
 .vier{

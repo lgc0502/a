@@ -41,8 +41,12 @@
     
     <div class="drei">
     <p>
-    <b>Founder</b>  HsuChia Huang<br><br>
-    <img src="https://github.com/StanleyHuangEE/wp2016/blob/gh-pages/profile.jpg?raw=true" width="500px" height="500px">
+    <b>Founder</b><br><br>
+    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/林家瑋.png?raw=true">
+    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/黃旭嘉.png?raw=true">
+    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/許雁婷.png?raw=true"><br>
+    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/張哲.png?raw=true">
+    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/李佳勳.png?raw=true">
     </p>
     </div>
     <div class="vier"></div>
