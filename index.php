@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>以物易物</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slide.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jQery.js"></script>
   <script src="js/script-3.js"></script>     
@@ -37,8 +38,42 @@
 	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
 
 	<!--show fb login status-->
+    <div id="status">
+    
+  	</div> 
 	<!---->
+<div id="main">  
+ <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="http://imgur.com/y4oM3Lo.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="http://imgur.com/kQvREop.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="http://imgur.com/Cdoo5lS.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  <script>
+  currentSlide(1);
+  </script>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> </div>
 
     <span class="opennav" onclick="openNav()"> &#9776;</span>
   </div>
