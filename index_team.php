@@ -22,7 +22,8 @@
     <a>Q and A</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
-   <div class="eins">
+  
+    <div class="eins">
     Hello World<br><br>
     <p>Welcome to Our Innovation</p>
     </div>
@@ -42,15 +43,20 @@
     <div class="drei">
     <p>
     <b>Founder</b><br><br>
-    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/林家瑋.png?raw=true">
-    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/黃旭嘉.png?raw=true">
-    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/許雁婷.png?raw=true"><br>
-    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/張哲.png?raw=true">
-    <img src="https://github.com/lgc0502/re1515/blob/gh-pages/http/李佳勳.png?raw=true">
+    <img class="lcw"  src="https://github.com/lgc0502/re1515/blob/gh-pages/http/林家瑋.png?raw=true">
+      <div class="context" id="numlcw">Chiawei Lin<p>成大資管所<p>Interest:Badminton,LOL<p>motto:___。</div>
+    <img class="hhc"  src="https://github.com/lgc0502/re1515/blob/gh-pages/http/黃旭嘉.png?raw=true">
+      <div class="context" id="numhhc">HsuChia Huang<p>NCKUEE<p>Interest:Badminton<p>motto:魯不是錯,是一種態度.
+    <img class="hyt"  src="https://github.com/lgc0502/re1515/blob/gh-pages/http/許雁婷.png?raw=true"><br>
+      <div class="context" id="numhyt">Xu Yan-Ting<p>NCKUCSIE<p>Interest:絕對是coding<p>motto:再吵 把你翻過去喔</div>
+    <img class="cc"  src="https://github.com/lgc0502/re1515/blob/gh-pages/http/張哲.png?raw=true">
+      <div class="context" id="numcc">張哲<p>NCKUCSIE<p>Interest:PLAY?<p>motto:KKK</div>
+    <img class="lgc"  src="https://github.com/lgc0502/re1515/blob/gh-pages/http/李佳勳.png?raw=true">
+      <div class="context" id="numlgc">Chiaxun Lee<p>NCKUCSIE<p>Interest:Music<p>motto:沒有做不到的事，只有敢不敢</div>
     </p>
     </div>
     <div class="vier"></div>
-    
-    </body>
-    </html>
- 	
+
+
+</body>
+</html> 	

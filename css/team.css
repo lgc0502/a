@@ -41,9 +41,8 @@ p{
   width:300px;
   height:300px;
   border-radius:50%;
-  -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
-  filter: drop-shadow(8px 8px 10px black);
   -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+  position:absolute;
 }
 
 .drei img:hover{
@@ -56,10 +55,96 @@ p{
   /* Safari and Chrome */
   -o-transition: opacity 0.9s;
   /* Opera */
-  -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
-  filter: drop-shadow(8px 8px 10px black);
   -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
   filter: blur(3px);
+}
+
+.lcw{
+  -webkit-filter: drop-shadow(8px 8px 10px blue); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px blue);
+  top:1350px;
+  left:100px;
+}
+
+.lcw:hover{
+  -webkit-filter: drop-shadow(8px 8px 10px blue); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px blue);
+}
+
+.hhc{
+  -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px black);
+  top:1350px;
+  left:460px;
+}
+
+.hhc:hover{
+  -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px black);
+}
+
+.hyt{
+  -webkit-filter: drop-shadow(8px 8px 10px red); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px red);
+  top:1300px;
+  left:780px;
+}
+
+.hyt:hover{
+  -webkit-filter: drop-shadow(8px 8px 10px red); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px red);
+}
+
+.cc{
+  -webkit-filter: drop-shadow(8px 8px 10px yellow); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px yellow);
+  top:1550px;
+  left:180px;
+}
+
+.cc:hover{
+  -webkit-filter: drop-shadow(8px 8px 10px yellow); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px yellow);
+}
+
+.lgc{
+  -webkit-filter: drop-shadow(8px 8px 10px green); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px green);
+  top:1550px;
+  left:540px;
+}
+
+.lgc:hover{
+  -webkit-filter: drop-shadow(8px 8px 10px green); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px green);
+}
+
+.context{
+  font-size:18px;
+  position:absolute;
+  z-index:3;
+  font-family:cursive;
+}
+#numlcw{
+  top:1310px;
+  left:150px;
+}
+#numhhc{
+  top:1310px;
+  left:510px;
+}
+#numhyt{
+  top:1310px;
+  left:870px;
+}
+#numcc{
+  top:1560px;
+  left:200px;
+}
+
+#numlgc{
+  top:1560px;
+  left:560px;
 }
 
 .vier{
