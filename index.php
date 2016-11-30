@@ -13,17 +13,17 @@
   <script src="Semantic-UI/dist/semantic.min.js"></script>
 </head>
 
-<body>
-  
+<body background="http://imgur.com/fbL71DI.jpg">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
     <a href="index_1.php">Our Team</a>
     <a href="index_2.php">exchange now</a>
-    <a>Q and A</a>
   </div>
-  <div id="logo">
-    <img src="http://imgur.com/HPtTFUN.png" />
+  <div id="main">
+    <div id="logo">
+    <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
+    </div>
   </div>
     
  <!--login button-->	
@@ -31,8 +31,6 @@
 	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
 
 	<!--show fb login status-->
-	<div id="status">
-	</div>
 	<!---->
 
 
