@@ -18,10 +18,11 @@
 <body>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.php">home</a>
-    <a href="index_1.php">Our Team</a>
-    <a href="index_2.php">exchange now</a>
-</div>
+    <a href="index.php">1515</a>
+    <a href="index_2.php">新增物品</a>
+    <a href="index_team.php">Our Team</a>
+    <a>Q and A</a>
+  </div> 
   <div id="main">
     <div id="logo">
     <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
