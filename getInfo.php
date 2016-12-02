@@ -7,6 +7,10 @@ if (isset($_GET['UserID'])) {
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
+<<<<<<< HEAD
+=======
+    echo "connected";
+>>>>>>> 59ee6384d3ca6f8967ea90c48ad9b8c6dd0e8007
     $QQ=$_GET['UserID'];
     //需要先確認資料庫內有無用戶資料，有的話表示歡迎
     $SearchMember = $conn->query("SELECT * FROM member WHERE UserID='$QQ'");

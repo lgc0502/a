@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>以物易物</title>
@@ -20,8 +21,7 @@
     <a href="index.php">home</a>
     <a href="index_1.php">Our Team</a>
     <a href="index_2.php">exchange now</a>
-  </div>
-  
+</div>
   <div id="main">
     <div id="logo">
     <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
@@ -74,16 +74,8 @@
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div> </div>
 
-    <span class="opennav" onclick="openNav()"> &#9776;</span>
-  </div>
 
-  <footer id="main">
-      <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-      <i class="fa fa-instagram fa-2x" aria-hidden="true"></i><br><br><br>
-       Copyright © 2016年 1515Team. All rights reserved.
-  </footer>
-  <div id="abgne_float_ad" >
-  </div>
+
 
 
 
@@ -167,7 +159,9 @@
         }
     }
   </script>
+
 <!--end of facebook login block-->
+
 
 
 </body>

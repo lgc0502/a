@@ -1,7 +1,7 @@
 .eins{
   background-size:cover;
   height:100vh;
-  background-image:url("https://github.com/StanleyHuangEE/wp2016/blob/gh-pages/thinking.jpg?raw=true");
+  background-image:url("https://photos-5.dropbox.com/t/2/AACAp49fuzraR0vQIL307hUn0Y5x5xVSGJvrnIX7vCOdDw/12/340842432/jpeg/32x32/1/_/1/2/2016-11-27%2018.07.05.jpg/EP6d19QCGMl-IAIoAg/ivySpX-4urwacLvpm7qx2dWD-mPI8pKlC-wMD3X02fE?size=2048x1536&size_mode=3");
   text-align:center;
   padding:180px 0;
   font-size:600%;
@@ -55,15 +55,15 @@ p{
   /* Safari and Chrome */
   -o-transition: opacity 0.9s;
   /* Opera */
-  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
-  filter: blur(3px);
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
 }
 
 .lcw{
   -webkit-filter: drop-shadow(8px 8px 10px blue); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px blue);
-  top:1350px;
-  left:100px;
+  top:1470px;
+  left:120px;
 }
 
 .lcw:hover{
@@ -74,8 +74,8 @@ p{
 .hhc{
   -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px black);
-  top:1350px;
-  left:460px;
+  top:1470px;
+  left:480px;
 }
 
 .hhc:hover{
@@ -86,20 +86,21 @@ p{
 .hyt{
   -webkit-filter: drop-shadow(8px 8px 10px red); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px red);
-  top:1300px;
-  left:780px;
+  top:1470px;
+  left:840px;
 }
 
 .hyt:hover{
   -webkit-filter: drop-shadow(8px 8px 10px red); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px red);
+  
 }
 
 .cc{
   -webkit-filter: drop-shadow(8px 8px 10px yellow); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px yellow);
-  top:1550px;
-  left:180px;
+  top:1750px;
+  left:310px;
 }
 
 .cc:hover{
@@ -110,8 +111,8 @@ p{
 .lgc{
   -webkit-filter: drop-shadow(8px 8px 10px green); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px green);
-  top:1550px;
-  left:540px;
+  top:1750px;
+  left:670px;
 }
 
 .lgc:hover{
@@ -120,31 +121,32 @@ p{
 }
 
 .context{
-  font-size:18px;
+  font-size:40%;
   position:absolute;
   z-index:3;
   font-family:cursive;
+  color:transparent;
 }
 #numlcw{
-  top:1310px;
-  left:150px;
+  top:1560px;
+  left:170px;
 }
 #numhhc{
-  top:1310px;
-  left:510px;
+  top:1560px;
+  left:560px;
 }
 #numhyt{
-  top:1310px;
-  left:870px;
+  top:1560px;
+  left:950px;
 }
 #numcc{
-  top:1560px;
-  left:200px;
+  top:1840px;
+  left:360px;
 }
 
 #numlgc{
-  top:1560px;
-  left:560px;
+  top:1840px;
+  left:750px;
 }
 
 .vier{
