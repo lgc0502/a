@@ -22,7 +22,7 @@
     <a href="index_team.php">Our Team</a>
     <a href="index_2.php">Exchange Now</a>
   </div>
-  
+  <span class="opennav" onclick="openNav()"> &#9776;</span>
   
   <div id="main">
     <div id="logo">
