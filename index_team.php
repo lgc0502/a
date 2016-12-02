@@ -23,7 +23,7 @@
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
   
-  <div class="main">
+  <div id="main">
     <div class="eins">
       Hello World<br><br>
       <p>Welcome to Our Innovation</p>
