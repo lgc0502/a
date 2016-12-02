@@ -1,9 +1,7 @@
-
 body {
   margin:0;
   font-family: "Open Sans", sans-serif;
   width: 100%;
-  cursor:url('https://raw.githubusercontent.com/hbd1019/1019/master/1476854874114..cur'),auto;
 }
 a{
   text-decoration:none;
@@ -13,7 +11,6 @@ a:hover{
   /*background-color: #BEBEBE;*/
 }
 input{
-  position:absolute;
   font-size: 30px;
   top:85px;
   left:600px;
@@ -71,8 +68,8 @@ input{
 }
 .tt{
   position:absolute;
-  top:-10px;
-  left:50px;
+  top:10px;
+  left:100px;
   font-size: 50px;
 }
 #text{
@@ -80,7 +77,15 @@ input{
   top:500px;
   left:-5px;
 }
+#logo{
+  position:absolute;
+  top:180px;
+  left:600px;
+  height:400px;
+  width:600px;
+  z-index:-2;
 
+}
 .ph{
   position:absolute;
   top:180px;
@@ -265,24 +270,9 @@ input{
   .sidenav a {font-size: 18px;}
 }
 
-#logo {
-  position:absolute;
-  top:50px;
-  left:50px;
-  width:200px;
-  height:60px;
-
-}
 #main {
     transition: margin-left .5s;
     padding: 16px;
-    position:absolute;
-    top:630px;
-    left:800px;
-    width:200px;
-    height:60px;
-  
-
 }
 
 .blueberry { margin: 0 auto; }
@@ -341,10 +331,11 @@ input{
 .blueberry .pager li.active a span { background: #404040; }
 
 footer{
-    display:block;
+    color:white;
+    text-align:center;
     background:white;
     position:relative;
-    height:80px;
+    height:120px;
     margin-top:0;
     bottom:0;
     width:100%;
