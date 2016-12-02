@@ -15,6 +15,7 @@ input{
   top:85px;
   left:600px;
 }
+
 .small{
   position:absolute;
   background: #d0d0d0; 
@@ -161,7 +162,7 @@ input{
   font-family:cursive;
   font-size: 80px;
   opacity:1;
-  z-index:-1;
+  z-index:3;
 }
 #A{
   color:	#EAC100;
@@ -180,49 +181,6 @@ input{
   height:300px;
   width:300px;
   z-index:-2;
-}
-.context{
-  position:absolute;
-  top:350px;
-  left:800px;
-  z-index:-2;
-  font-family:cursive;
-}
-#num1{
-  top:250px;
-  left:450px;
-}
-#num11{
-  top:350px;
-}
-#num2{
-  top:600px;
-  left:450px;
-}
-#num22{
-  top:700px;
-}
-#num3{
-  top:950px;
-  left:450px;
-}
-#num33{
-  top:1050px;
-}
-#num4{
-  top:1300px;
-  left:450px;
-}
-#num44{
-  top:1400px;
-}
-
-#num5{
-  top:1650px;
-  left:450px;
-}
-#num55{
-  top:1750px;
 }
 
 .opennav{
@@ -248,7 +206,7 @@ input{
 }
 
 .sidenav a{
-    padding:8px 8px 8px 32px;
+    padding:12px 8px 8px 32px;
     text-decoration:none;
     font-size:25px;
     color:#979c9f;

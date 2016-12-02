@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>以物易物</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/jQery.js"></script>
-    <script src="https://use.fontawesome.com/488b28b092.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>以物易物</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jQery.js"></script>
+  <script src="js/script-3.js"></script>     
+  <script src="https://use.fontawesome.com/488b28b092.js"></script>
+  <link rel="stylesheet" type="text/css" href="Semantic-UI/dist/semantic.min.css">
+  <script src="Semantic-UI/dist/semantic.min.js"></script>
 </head>
 
-<body background="http://imgur.com/fbL71DI.jpg">
-<div id="mySidenav" class="sidenav">
+<body>
+  <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
     <a href="index_1.php">Our Team</a>
@@ -134,8 +139,68 @@
         }
     }
 
+=======
+  </div>
+  
+  <div id="main">
+    <div id="logo">
+    <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
+    </div>
+  
+    <button class="ui secondary button">
+      Okay
+      </button>
+      <button class="ui button">
+        Cancel
+        </button>
+ <!--login button-->	
 
+	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
 
+	<!--show fb login status-->
+    <div id="status">
+    
+  	</div> 
+	<!---->
+<div id="main">  
+ <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="http://imgur.com/y4oM3Lo.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+>>>>>>> 1bfc187fc5654c2c880f9a978523c8220529f6f8
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="http://imgur.com/kQvREop.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="http://imgur.com/Cdoo5lS.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  <script>
+  currentSlide(1);
+  </script>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> </div>
+
+<<<<<<< HEAD
+=======
+    <span class="opennav" onclick="openNav()"> &#9776;</span>
+  </div>
+>>>>>>> 1bfc187fc5654c2c880f9a978523c8220529f6f8
 
 
 
