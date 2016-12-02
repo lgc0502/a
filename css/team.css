@@ -1,7 +1,7 @@
 .eins{
   background-size:cover;
   height:100vh;
-  background-image:url("https://photos-5.dropbox.com/t/2/AACAp49fuzraR0vQIL307hUn0Y5x5xVSGJvrnIX7vCOdDw/12/340842432/jpeg/32x32/1/_/1/2/2016-11-27%2018.07.05.jpg/EP6d19QCGMl-IAIoAg/ivySpX-4urwacLvpm7qx2dWD-mPI8pKlC-wMD3X02fE?size=2048x1536&size_mode=3");
+  background-image:url("https://github.com/lgc0502/re1515/blob/gh-pages/http/group_photo.jpg?raw=true");
   text-align:center;
   padding:180px 0;
   font-size:600%;
@@ -12,22 +12,23 @@
 .zwei{
   background-size:cover;
   height:100vh;
-  background-color:#5bb4e5;
+  background-image:url("http://hope-sthlm.com/media/wysiwyg/hope-shops/shop-in-shops/hope-shop-in-shops.jpg");
   text-align:center;
   padding:100px 0;
   font-size:500%;
   font-family: 'Merriweather Sans', sans-serif;
-  color:white;
+  color:DodgerBlue ;
   }
 
 .drei{
   background-size:cover;
   height:120vh;
+  background-image:url("http://www.themothershipgroup.com/wp-content/uploads/2015/08/mps-conv-store-model2.jpg");
   text-align:center;
   padding:40px 0;
   font-size:500%;
   font-family: 'Merriweather Sans', sans-serif;
-  color:rgb(52,78,80);
+  color:LightGoldenRodYellow ;
   z-index:-1;
 }
 
@@ -36,6 +37,14 @@ p{
   padding:10px 0;
 }
 
+.zwei p{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  letter-spacing: 10px;
+  font-size:50%;
+  padding:10px 0;
+}
 
 .drei img{
   width:300px;
@@ -43,7 +52,8 @@ p{
   border-radius:50%;
   -webkit-backface-visibility: hidden; /* Fix for transition flickering */
   position:absolute;
-}
+  z-index:3;
+}  
 
 .drei img:hover{
 	transition: opacity 0.9s;
@@ -62,7 +72,7 @@ p{
 .lcw{
   -webkit-filter: drop-shadow(8px 8px 10px blue); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px blue);
-  top:1470px;
+  top:1620px;
   left:120px;
 }
 
@@ -74,7 +84,7 @@ p{
 .hhc{
   -webkit-filter: drop-shadow(8px 8px 10px black); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px black);
-  top:1470px;
+  top:1620px;
   left:480px;
 }
 
@@ -86,7 +96,7 @@ p{
 .hyt{
   -webkit-filter: drop-shadow(8px 8px 10px red); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px red);
-  top:1470px;
+  top:1620px;
   left:840px;
 }
 
@@ -99,7 +109,7 @@ p{
 .cc{
   -webkit-filter: drop-shadow(8px 8px 10px yellow); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px yellow);
-  top:1750px;
+  top:1900px;
   left:310px;
 }
 
@@ -111,7 +121,7 @@ p{
 .lgc{
   -webkit-filter: drop-shadow(8px 8px 10px green); /* Safari 6.0 - 9.0 */
   filter: drop-shadow(8px 8px 10px green);
-  top:1750px;
+  top:1900px;
   left:670px;
 }
 
@@ -121,32 +131,16 @@ p{
 }
 
 .context{
-  font-size:40%;
+  font-size:50%;
   position:absolute;
-  z-index:3;
-  font-family:cursive;
+  z-index:4;
   color:transparent;
-}
-#numlcw{
-  top:1560px;
-  left:170px;
-}
-#numhhc{
-  top:1560px;
-  left:560px;
-}
-#numhyt{
-  top:1560px;
-  left:950px;
-}
-#numcc{
-  top:1840px;
-  left:360px;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
-#numlgc{
-  top:1840px;
-  left:750px;
+#numlcw,#numhhc,#numhyt,#numcc,#numlgc{
+  top:2020px;
+  left:55px;
 }
 
 .vier{
@@ -158,6 +152,13 @@ p{
   font-size:500%;
   font-family: 'Merriweather Sans', sans-serif;
   color:rgb(52,78,8);
+}
+
+.transition{
+  background-size:cover;
+  height:40px;
+  background-color:#282E34 ;
+  padding:10px 0;
 }
 
 body{

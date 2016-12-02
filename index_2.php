@@ -21,8 +21,8 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">1515</a>
-    <a href="index_1.php">Our Team</a>
-    <a href="index_2.php">新增物品</a>
+    <a href="index_team.php">Our Team</a>
+    <a href="index_2.php">Exchange Now</a>
     <a>Q and A</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>

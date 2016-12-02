@@ -6,9 +6,52 @@
 
   function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
       document.body.style.backgroundColor = "white";
+      document.getElementById("main").style.marginLeft= "0";
   }
+
+$(document).ready(function(){
+    $(".lcw").mouseover(function(){
+      document.getElementById("numlcw").style.color = "white";
+    });
+    
+    $(".lcw").mouseout(function(){
+      document.getElementById("numlcw").style.color = "transparent";
+    });
+     
+    $(".hhc").mouseover(function(){
+      document.getElementById("numhhc").style.color = "white";
+    });
+    
+    $(".hhc").mouseout(function(){
+      document.getElementById("numhhc").style.color = "transparent";
+    });
+     
+    $(".hyt").mouseover(function(){
+      document.getElementById("numhyt").style.color = "white";
+    });
+    
+    $(".hyt").mouseout(function(){
+      document.getElementById("numhyt").style.color = "transparent";
+    });
+     
+    $(".cc").mouseover(function(){
+      document.getElementById("numcc").style.color = "white";
+    });
+    
+    $(".cc").mouseout(function(){
+      document.getElementById("numcc").style.color = "transparent";
+    });
+     
+    $(".lgc").mouseover(function(){
+      document.getElementById("numlgc").style.color = "white";
+    });
+    
+    $(".lgc").mouseout(function(){
+      document.getElementById("numlgc").style.color = "transparent";
+    });
+     
+});
 
 $(window).load(function(){
       var $win = $(window),

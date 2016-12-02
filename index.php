@@ -18,8 +18,8 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
-    <a href="index_1.php">Our Team</a>
-    <a href="index_2.php">exchange now</a>
+    <a href="index_team.php">Our Team</a>
+    <a href="index_2.php">Exchange Now</a>
   </div>
   
   <div id="main">
@@ -27,12 +27,6 @@
     <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
     </div>
   
-    <button class="ui secondary button">
-      Okay
-      </button>
-      <button class="ui button">
-        Cancel
-        </button>
  <!--login button-->	
 
 	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
