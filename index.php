@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>以物易物</title>
@@ -21,6 +20,7 @@
     <a href="index.php">home</a>
     <a href="index_team.php">Our Team</a>
     <a href="index_2.php">Exchange Now</a>
+      <a href="showItem.php">ItemCatalog</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
   
@@ -69,12 +69,6 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div> </div>
-
-
-
-
-
-
 <!--facebook login block-->
 <script>
     // This is called with the results from from FB.getLoginStatus().
