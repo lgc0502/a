@@ -90,30 +90,32 @@ echo $_SESSION['UserID'];
             	<div class=col-lg-4>
                 	<h2>Heading</h2>
                 	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-                	<p><a class="btn btn-primary" href=# role=button>View details &raquo;</a>
-            	</div>
-
-							<button id="itemBtn">Open Modal</button>
-
-							<div id="itemModal" class="modal">
-  						  <div class="modal-content">
-    					    <span class="close">x</span>
-    					    <p>Some text in the Modal..</p>
-  						  </div>
+            	    
+                  <button class="ui inverted red button" id="itemBtn">View details &raquo;</button>
+                  
+                  <div id="itemModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <span class="close">×</span>
+                              <h2>StanleyHuang ‣ Yonex Duora10 lcw <button class="ui yellow button">Exchange</button></h2>
+                          </div>
+                          <div class="modal-body">
+                              <p>Some text in the Item Body</p>
+                              <p>Some other text...</p>
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKo2MWbngJqjrJ3t0eRE73AjZEQ2MtUQW8HUsSa3FFftY1OqvHug">
+                          </div>
+                          <div class="modal-footer">
+                              <h3>Email:stanley850904@gmail.com</h3>
+                          </div>
+                      </div>
+                  </div>
               </div>
+
         	</div>
             
 		</div>
     
-
-							<button id="itemBtn">Open Modal</button>
-
-							<div id="itemModal" class="modal">
-  						  <div class="modal-content">
-    					    <span class="close">x</span>
-    					    <p>Some text in the Modal..</p>
-  						  </div>
-              </div>
               <footer class=footer>
                 <p>&copy; Company 2014</footer>
 </body>
