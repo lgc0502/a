@@ -20,17 +20,17 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
     <a href="index_team.php">Our Team</a>
-<<<<<<< Updated upstream
+<!--<<<<<<< Updated upstream-->
     <a href="index_2.php">Exchange Now</a>
       <a href="showItem.php">ItemCatalog</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
-  
-=======
-    <a>Q and A</a>
-  </div>
+  <!--</div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes-->
   <div id="main">
     <div id="logo">
     <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
