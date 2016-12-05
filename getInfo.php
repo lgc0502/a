@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['AccessToken']=$_GET['AccessToken'];
 header("Content-Type:text/html; charset=utf-8");
 if (isset($_GET['UserID'])||isset($_SESSION['UserID'])) {
     include 'mysql_config.php';
@@ -16,6 +17,7 @@ if (isset($_GET['UserID'])||isset($_SESSION['UserID'])) {
     if ($Result=$SearchMember->fetch_assoc()) {
         echo $Result['UserName'] . "，Nice to see you again!";
         $_SESSION['UserID']=$Result['UserID'];
+        $_SESSION['UserName']=$Result['UserName'];
     } elseif ($Result1=$SearchMember1->fetch_assoc()){
         echo $Result1['UserName'] . "，Nice to see you again!";
     }
@@ -24,6 +26,8 @@ if (isset($_GET['UserID'])||isset($_SESSION['UserID'])) {
         $conn->query("INSERT INTO member (UserID,UserName,UserMail,RegistrationTime) VALUES ('" . $_GET['UserID'] . "','" . $_GET['UserName'] . "','" . $_GET['UserMail'] . "','" .date('Y-m-d'). "')");
         echo "Welcome aboard," . $_GET['UserName'] . "!";
         $_SESSION['UserID']=$_GET['UserID'];
+        $_SESSION['UserName']=$_GET['UserName'];
     }
+
 }
 ?>

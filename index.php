@@ -10,8 +10,7 @@
   <script src="js/jQery.js"></script>
   <script src="js/script-3.js"></script>     
   <script src="https://use.fontawesome.com/488b28b092.js"></script>
-  <link rel="stylesheet" type="text/css" href="Semantic-UI/dist/semantic.min.css">
-  <script src="Semantic-UI/dist/semantic.min.js"></script>
+
 </head>
 
 <body onload="showHint()">
@@ -29,12 +28,31 @@
     <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
     </div>
   
- <!--login button-->	
+ <!--login button-->
 
-	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>
+	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" scope = "public_profile,email" onlogin = "checkLoginState();"  ></div>
+      <form method="post" action="index.php">
+          <input type="hidden" value="true" name="logOut">
+          <input type="submit" value="登出" >
+      </form>
       <?php
       session_start();
-      echo $_SESSION['UserID'].",HI!";
+      if (isset($_POST['logOut'])){
+          $token = $_SESSION["AccessToken"];
+          if($token)
+          {
+              $graph_url = "https://graph.facebook.com/me/permissions?method=delete&access_token=".$token;
+              $result = json_decode(file_get_contents($graph_url));
+              session_destroy();
+              header('Location:index.php');
+              echo "已成功登出";
+          } else{
+              echo "尚未登入";
+          }
+      }
+      if(isset($_SESSION['UserName'])){
+          echo $_SESSION['UserName'].",HI!";
+      }
       ?>
 	<!--show fb login status-->
     <div id="stage">
@@ -76,10 +94,12 @@
 <script>
     // This is called with the results from from FB.getLoginStatus().
     var getInfo = new Array();
+    var response1;
     function statusChangeCallback(response) {
         console.log('statusChangeCallback');
         console.log(response);
         getInfo[0] = response.authResponse.accessToken;
+        response1=response;
         if (response.status === 'connected') {
             // Logged into your app and Facebook.
             testAPI();
@@ -92,6 +112,7 @@
             // The person is not logged into Facebook, so we're not sure if
             // they are logged into this app or not.
         }
+
     }
     // This function is called when someone finishes with the Login
     // Button.  See the onlogin handler attached to it in the sample
@@ -133,7 +154,7 @@
             getInfo[2] = response.name;
             getInfo[3]= response.email;
             showHint();
-
+            $('.fb-login-button').css( "display", "none" );
         });
     }
     function showHint() {
@@ -147,10 +168,13 @@
                     document.getElementById("stage").innerHTML = this.responseText;
                 }
             };
-            xmlhttp.open("GET", "getInfo.php?UserName=" +getInfo[2]+"&UserID="+getInfo[1]+"&UserMail="+getInfo[3], true);
+            xmlhttp.open("GET", "getInfo.php?UserName=" +getInfo[2]+"&UserID="+getInfo[1]+"&UserMail="+getInfo[3]+"&AccessToken="+getInfo[0], true);
             xmlhttp.send();
+
         }
     }
+
+
   </script>
 
 <!--end of facebook login block-->

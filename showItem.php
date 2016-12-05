@@ -6,7 +6,10 @@
  * Time: 下午 07:37
  */
 session_start();
-echo $_SESSION['UserID'];
+if(isset($_SESSION['UserID'])){
+    echo $_SESSION['UserID'];
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +48,7 @@ echo $_SESSION['UserID'];
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Downloads</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">C                         ontact</a></li>
                 </ul>
             </nav>
         </div>
