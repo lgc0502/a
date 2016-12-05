@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>以物易物</title>
-<!--  <link rel="stylesheet" href="css/style.css">-->
   <link rel="stylesheet" href="css/slide.css">
   <link rel="stylesheet" href="css/sidenave.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -19,31 +18,32 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
     <a href="index_team.php">Our Team</a>
-<!--<<<<<<< Updated upstream-->
     <a href="index_2.php">Exchange Now</a>
       <a href="showItem.php">ItemCatalog</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
-  <!--</div>
-  <span class="opennav" onclick="openNav()"> &#9776;</span>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes-->
+
   <div id="main">
     <div id="logo">
-    <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
+    <img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/>
     </div>
   
  <!--login button-->
-
-	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" scope = "public_profile,email" onlogin = "checkLoginState();"  ></div>
-      <form method="post" action="index.php">
+      <?php
+      session_start();
+      if(isset($_SESSION['UserName'])){
+      echo $_SESSION['UserName'].",HI!";
+      }
+      ?>
+      <div id="stage"></div>
+      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" scope = "public_profile,email" onlogin = "checkLoginState();"  ></div>
+      <form class="logOut" method="post" action="index.php"  style="display: none">
           <input type="hidden" value="true" name="logOut">
           <input type="submit" value="登出" >
       </form>
+
       <?php
-      session_start();
+
       if (isset($_POST['logOut'])){
           $token = $_SESSION["AccessToken"];
           if($token)
@@ -52,18 +52,19 @@
               $result = json_decode(file_get_contents($graph_url));
               session_destroy();
               header('Location:index.php');
-              echo "已成功登出";
+
           } else{
-              echo "尚未登入";
+
           }
       }
       if(isset($_SESSION['UserName'])){
-          echo $_SESSION['UserName'].",HI!";
+          echo "<script type='text/javascript'>$('.logOut').css('display','block');</script>";
+          echo "<script type='text/javascript'>$('.fb-login-button').css('display','none');</script>";
       }
       ?>
-	<!--show fb login status-->
-    <div id="stage">
-  	</div> 
+
+      <!--show fb login status-->
+
 	<!---->
 <div id="main">  
  <div class="slideshow-container">
@@ -161,12 +162,13 @@
             getInfo[2] = response.name;
             getInfo[3]= response.email;
             showHint();
-            $('.fb-login-button').css( "display", "none" );
+            $('.logOut').css('display','block');
+            $('.fb-login-button').css('display','none');
         });
     }
     function showHint() {
         if (typeof getInfo[0]=='undefined') {// no input access token
-            document.getElementById("txtHint").innerHTML = "";
+            document.getElementById("txtHint").innerHTML = " ";
             return;
         } else {
             var xmlhttp = new XMLHttpRequest();
