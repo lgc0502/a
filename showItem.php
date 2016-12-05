@@ -6,7 +6,10 @@
  * Time: 下午 07:37
  */
 session_start();
-echo $_SESSION['UserID'];
+if(isset($_SESSION['UserID'])){
+    echo $_SESSION['UserID'];
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,6 +38,22 @@ echo $_SESSION['UserID'];
         <a href="#">ItemCatalog</a>
     </div>
     <span class="opennav" onclick="openNav()"> &#9776;</span>
+
+    <div class=container>
+        <div class="masthead">
+            <h3 class="text-muted">Project name</h3>
+            <nav>
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">C                         ontact</a></li>
+                </ul>
+            </nav>
+        </div>
+
 
 		<div id="main">
     	<div class=container>

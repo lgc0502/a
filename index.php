@@ -4,15 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>以物易物</title>
-<!--  <link rel="stylesheet" href="css/style.css">-->
   <link rel="stylesheet" href="css/slide.css">
   <link rel="stylesheet" href="css/sidenave.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jQery.js"></script>
   <script src="js/script-3.js"></script>     
   <script src="https://use.fontawesome.com/488b28b092.js"></script>
-  <link rel="stylesheet" type="text/css" href="Semantic-UI/dist/semantic.min.css">
-  <script src="Semantic-UI/dist/semantic.min.js"></script>
+
 </head>
 
 <body onload="showHint()">
@@ -20,32 +18,53 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
     <a href="index_team.php">Our Team</a>
-<!--<<<<<<< Updated upstream-->
     <a href="index_2.php">Exchange Now</a>
       <a href="showItem.php">ItemCatalog</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
-  <!--</div>
-  <span class="opennav" onclick="openNav()"> &#9776;</span>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes-->
+
   <div id="main">
     <div id="logo">
-    <center><img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/></center>
+    <img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/>
     </div>
   
- <!--login button-->	
-
-	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>
+ <!--login button-->
       <?php
       session_start();
-      echo $_SESSION['UserID'].",HI!";
+      if(isset($_SESSION['UserName'])){
+      echo $_SESSION['UserName'].",HI!";
+      }
       ?>
-	<!--show fb login status-->
-    <div id="stage">
-  	</div> 
+      <div id="stage"></div>
+      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" scope = "public_profile,email" onlogin = "checkLoginState();"  ></div>
+      <form class="logOut" method="post" action="index.php"  style="display: none">
+          <input type="hidden" value="true" name="logOut">
+          <input type="submit" value="登出" >
+      </form>
+
+      <?php
+
+      if (isset($_POST['logOut'])){
+          $token = $_SESSION["AccessToken"];
+          if($token)
+          {
+              $graph_url = "https://graph.facebook.com/me/permissions?method=delete&access_token=".$token;
+              $result = json_decode(file_get_contents($graph_url));
+              session_destroy();
+              header('Location:index.php');
+
+          } else{
+
+          }
+      }
+      if(isset($_SESSION['UserName'])){
+          echo "<script type='text/javascript'>$('.logOut').css('display','block');</script>";
+          echo "<script type='text/javascript'>$('.fb-login-button').css('display','none');</script>";
+      }
+      ?>
+
+      <!--show fb login status-->
+
 	<!---->
 <div id="main">  
  <div class="slideshow-container">
@@ -83,10 +102,12 @@
 <script>
     // This is called with the results from from FB.getLoginStatus().
     var getInfo = new Array();
+    var response1;
     function statusChangeCallback(response) {
         console.log('statusChangeCallback');
         console.log(response);
         getInfo[0] = response.authResponse.accessToken;
+        response1=response;
         if (response.status === 'connected') {
             // Logged into your app and Facebook.
             testAPI();
@@ -99,6 +120,7 @@
             // The person is not logged into Facebook, so we're not sure if
             // they are logged into this app or not.
         }
+
     }
     // This function is called when someone finishes with the Login
     // Button.  See the onlogin handler attached to it in the sample
@@ -140,12 +162,13 @@
             getInfo[2] = response.name;
             getInfo[3]= response.email;
             showHint();
-
+            $('.logOut').css('display','block');
+            $('.fb-login-button').css('display','none');
         });
     }
     function showHint() {
         if (typeof getInfo[0]=='undefined') {// no input access token
-            document.getElementById("txtHint").innerHTML = "";
+            document.getElementById("txtHint").innerHTML = " ";
             return;
         } else {
             var xmlhttp = new XMLHttpRequest();
@@ -154,10 +177,13 @@
                     document.getElementById("stage").innerHTML = this.responseText;
                 }
             };
-            xmlhttp.open("GET", "getInfo.php?UserName=" +getInfo[2]+"&UserID="+getInfo[1]+"&UserMail="+getInfo[3], true);
+            xmlhttp.open("GET", "getInfo.php?UserName=" +getInfo[2]+"&UserID="+getInfo[1]+"&UserMail="+getInfo[3]+"&AccessToken="+getInfo[0], true);
             xmlhttp.send();
+
         }
     }
+
+
   </script>
 
 <!--end of facebook login block-->
