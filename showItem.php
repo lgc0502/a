@@ -5,6 +5,8 @@
  * Date: 2016/12/4
  * Time: 下午 07:37
  */
+session_start();
+echo $_SESSION['UserID'];
 ?>
 <!DOCTYPE html>
 <html>

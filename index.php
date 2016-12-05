@@ -14,7 +14,7 @@
   <script src="Semantic-UI/dist/semantic.min.js"></script>
 </head>
 
-<body>
+<body onload="showHint()">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
@@ -31,8 +31,11 @@
   
  <!--login button-->	
 
-	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>	
-
+	  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" scope = "public_profile,email" onlogin = "checkLoginState();"></div>
+      <?php
+      session_start();
+      echo $_SESSION['UserID'].",HI!";
+      ?>
 	<!--show fb login status-->
     <div id="stage">
   	</div> 
