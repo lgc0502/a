@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>以物易物</title>
+<<<<<<< Updated upstream
+=======
+<!--  <link rel="stylesheet" href="css/style.css">-->
+>>>>>>> Stashed changes
   <link rel="stylesheet" href="css/slide.css">
   <link rel="stylesheet" href="css/sidenave.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,11 +22,17 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">home</a>
     <a href="index_team.php">Our Team</a>
+<<<<<<< Updated upstream
     <a href="index_2.php">Exchange Now</a>
       <a href="showItem.php">ItemCatalog</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
 
+=======
+    <a>Q and A</a>
+  </div>
+  <span class="opennav" onclick="openNav()"> &#9776;</span>
+>>>>>>> Stashed changes
   <div id="main">
     <div id="logo">
     <img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/>
