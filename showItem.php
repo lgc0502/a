@@ -66,7 +66,7 @@ session_start();
                 }
                         echo "<div class=col-lg-4><h2>".$row['ItemName']."</h2>
                         <img class=\"OuterImg\"  height=\"150\" width=\"150\" src=\"".$row['ImgUrl']."\">
-                    <h3 style='display:none'>".$row['OwnedBy']."</h3>
+                    
                     <button  class=\"itemBtn btn btn-default\"><span class=\"glyphicon glyphicon-list-alt\" aria-hidden=\"true\"></span>  View details &raquo;</button>
                     <div  class=\"modal\">
                           <!-- Modal content -->
@@ -74,6 +74,7 @@ session_start();
                               <div class=\"modal-header\">
                                   <span class=\"close\">×</span>
                                   <h2><button class=\"ui yellow like button\">Exchange</button></h2>
+                                  <h3 style='display:none'>".$row['OwnedBy']."</h3>
                               </div>
                               <div class=\"modal-body\">
                                   <p class='ItemHead'>".$row['ItemName']."</p><p>".$row['ItemInfo']."</p>
