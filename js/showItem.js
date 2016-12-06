@@ -7,4 +7,5 @@ $(document).ready(function(){
         $(".modal").css('display','none');
         $('body').css('background-color','rgba(255, 255, 255, 1)');
     });
+
 });

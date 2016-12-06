@@ -68,3 +68,27 @@
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
+
+.OuterImg{
+    margin-right: 10px;
+    border-radius:10%;
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+}
+.InnerImg{
+    float: right;
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+}
+p{
+    word-wrap:break-word; word-break:normal;
+}
+.ItemHead{
+    font-size:200%;
+    font-weight: bold;
+}
+.like{
+    vertical-align: middle;
+}
