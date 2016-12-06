@@ -66,6 +66,7 @@
       <button type="submit" class="btn btn-primary" id="send">Submit</button><br><br>
     </form>
     <?php
+    session_start();
       include 'mysql_config.php';
       $conn=new mysqli($servername,$username,$password,$dbname);
       if ($conn->connect_errno) {
@@ -77,16 +78,8 @@
         echo $_POST['ItemCategory'].'<br>';
         echo "<img src='".$_POST['ImgUrl']."' height=\"42\" width=\"42\">".'<br>';
           echo $_POST['ItemInfo'].'<br>';
-          $conn->query ("INSERT INTO commodity (ItemName,ItemCategory,ImgUrl,ItemInfo) VALUES ('".$_POST['ItemName']."','".$_POST['ItemCategory']."','".$_POST['ImgUrl']."','".$_POST['ItemInfo']."')");
-
+          $conn->query ("INSERT INTO commodity (ItemName,ItemCategory,ImgUrl,ItemInfo,OwnedBy) VALUES ('".$_POST['ItemName']."','".$_POST['ItemCategory']."','".$_POST['ImgUrl']."','".$_POST['ItemInfo']."','".$_SESSION['UserID']."')");
       }
-    $result=$conn->query("select * from commodity ");
-    $row=$result->fetch_assoc();
-    echo "<table>";
-    while($row=$result->fetch_assoc()){
-        echo '<tr><td>'.$row['ItemName'].'</td><td>'.$row['ItemInfo'].'</td><td>'.$row['PostTime'].'</td></tr>';
-    }
-    echo "</table>";
     ?>
   </div>
   <div class="col-xs-3">
