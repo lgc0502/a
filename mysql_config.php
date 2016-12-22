@@ -1,6 +1,7 @@
 <?php
-	$servername = "localhost";
-	$username = "wp2016_groupF";
-	$password = "re1515";
-	$dbname = "wp2016_groupF";
+  $servername = "localhost";
+  $username = "wp2016_groupF";
+  $password = "XHr3587TfVHVxRYx";
+  $dbname = "wp2016_groupF";
 ?>
+
