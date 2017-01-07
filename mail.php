@@ -23,8 +23,8 @@
 	{
 		$saler = $result2['UserName'];
 		$salerMail = $result2['UserMail'];
+		$conn->query ("INSERT INTO wantList (ItemName,ItemCategory,ImgUrl,ItemInfo,OwnedBy) VALUES ()");
 	}
-		
 	echo $buyer;
 	echo $saler;
 	echo $salerMail;

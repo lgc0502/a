@@ -63,7 +63,8 @@ AAAAAAAAAA此為測試個人頁面AAAAAAAAA
             <?php
             include 'mysql_config.php';
             $conn = new mysqli($servername, $username, $password, $dbname);
-            $result=$conn->query("select * from commodity  where ");
+           $aaa =$_SESSION['UserID'];
+            $result=$conn->query("SELECT a.* FROM `commodity` as a, `wantList` as b  where b.OwnID=".$aaa." and a.OwnedBy=b.wantID GROUP BY ItemNo ");
             $i=1;
             while ($row=$result->fetch_assoc()){
                 if ($i==1){

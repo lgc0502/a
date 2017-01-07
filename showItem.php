@@ -6,6 +6,9 @@
  * Time: 下午 07:37
  */
 session_start();
+if (!isset($_SESSION['UserID'])){
+    echo "<script>alert(\"Please login!\");window.location = \"index.php\";</script>";
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -76,6 +79,7 @@ session_start();
                                   <span class=\"close\">×</span>
                                   <h2><button class=\"ui yellow like button\">Exchange</button></h2>
                                   <h3 style='display:none'>".$row['OwnedBy']."</h3>
+                                 <h3 style='display:none'>".$row['ItemNo']."</h3>
                               </div>
                               <div class=\"modal-body\">
                                   <p class='ItemHead'>".$row['ItemName']."</p><p>".$row['ItemInfo']."</p>
