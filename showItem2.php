@@ -7,7 +7,7 @@
  */
 session_start();
 if (!isset($_SESSION['UserID'])){
-    header("Location:index.php?Message=".urlencode());
+    echo "<script>alert(\"Please login!\");window.location = \"index.php\";</script>";
 }
 ?>
 <!DOCTYPE html>
@@ -63,7 +63,7 @@ AAAAAAAAAA此為測試個人頁面AAAAAAAAA
             <?php
             include 'mysql_config.php';
             $conn = new mysqli($servername, $username, $password, $dbname);
-            $result=$conn->query("select * from commodity ");
+            $result=$conn->query("select * from commodity  where ");
             $i=1;
             while ($row=$result->fetch_assoc()){
                 if ($i==1){
