@@ -68,6 +68,7 @@ session_start();
                         <img class=\"OuterImg\"  height=\"150\" width=\"150\" src=\"".$row['ImgUrl']."\">
                     
                     <button  class=\"itemBtn btn btn-default\"><span class=\"glyphicon glyphicon-list-alt\" aria-hidden=\"true\"></span>  View details &raquo;</button>
+                    <div  class=\"modalFrame\">
                     <div  class=\"modal\">
                           <!-- Modal content -->
                           <div class=\"modal-content\">
@@ -79,7 +80,7 @@ session_start();
                               <div class=\"modal-body\">
                                   <p class='ItemHead'>".$row['ItemName']."</p><p>".$row['ItemInfo']."</p>
                                   <img height=\"300\" width=\"300\" class=\"InnerImg\" src=\"".$row['ImgUrl']."\"></div>
-                              <div class=\"modal-footer\"></div></div></div></div>";
+                              <div class=\"modal-footer\"></div></div></div></div></div>";
 
                 if ($i==3){
                     echo "</div>";
