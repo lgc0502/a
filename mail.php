@@ -1,7 +1,9 @@
 <?php
 	session_start();
 	$SalerID = $_GET['SalerID'];
+	$ItemNO = $_GET['ItemNO'];
 	echo $SalerID;
+	echo $ItemNO;
 	header("Content-Type:text/html; charset=utf-8");
 	include 'mysql_config.php';
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,7 +25,6 @@
 	{
 		$saler = $result2['UserName'];
 		$salerMail = $result2['UserMail'];
-		$conn->query ("INSERT INTO wantList (ItemName,ItemCategory,ImgUrl,ItemInfo,OwnedBy) VALUES ()");
 	}
 	echo $buyer;
 	echo $saler;
@@ -40,5 +41,6 @@
 	$header2 = "以物易物 <re1515>";
 	mail($buyerMail,$subject2,$message2,$header2);
 	
-		
+	$conn->query("INSERT INTO wantList (OwnID, wantID,ItemNO) VALUES ('".$SalerID."','".$buyerID."','".$ItemNO."')");	
+	//echo "<script> alert(".$SalerID.$ItemNO."); </script>";
 ?>

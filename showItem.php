@@ -79,7 +79,7 @@ if (!isset($_SESSION['UserID'])){
                                   <span class=\"close\">×</span>
                                   <h2><button class=\"ui yellow like button\">Exchange</button></h2>
                                   <h3 style='display:none'>".$row['OwnedBy']."</h3>
-                                 <h3 style='display:none'>".$row['ItemNo']."</h3>
+                                 <h4 style='display:none'>".$row['ItemNO']."</h4>
                               </div>
                               <div class=\"modal-body\">
                                   <p class='ItemHead'>".$row['ItemName']."</p><p>".$row['ItemInfo']."</p>

@@ -8,7 +8,7 @@ $(document).ready(function(){
     $(".like").click(function(){
 	   var ID;
        ID = $(this).parent().next().html();
-       var ItemNo= $(this).parent().next().next().html();
+       var ItemNum= $(this).parent().siblings("h4").html();
 		// Assign handlers immediately after making the request,
 	// and remember the jqXHR object for this request
 		var jqxhr = $.ajax( "mail.php" );
@@ -33,7 +33,7 @@ $(document).ready(function(){
 		$.ajax({
 			  method: "GET",
 			  url: "mail.php",
-			  data: { SalerID:ID,ItemNo:ItemNo }
+			  data: { SalerID:ID,ItemNO:ItemNum }
 		});
 		//.done(function( msg ) {
 		//	      alert( "Data Saved: " + msg );
