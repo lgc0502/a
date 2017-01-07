@@ -4,10 +4,6 @@ $(document).ready(function(){
         $('body').css('background-color','rgba(0, 0, 0, 0.1)');
     });
 
-    $(".close").click(function(){
-        $(".modal").css('display','none');
-        $('body').css('background-color','rgba(255, 255, 255, 1)');
-    });
 
     $(".like").click(function(){
 	   var ID;

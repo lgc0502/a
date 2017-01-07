@@ -21,6 +21,7 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jQery.js"></script>
     <script src="js/showItem.js"></script>
+    <script src="js/modal.js"></script>
     <script src="https://use.fontawesome.com/488b28b092.js"></script>
 </head>
 <body>
@@ -68,7 +69,6 @@ session_start();
                         <img class=\"OuterImg\"  height=\"150\" width=\"150\" src=\"".$row['ImgUrl']."\">
                     
                     <button  class=\"itemBtn btn btn-default\"><span class=\"glyphicon glyphicon-list-alt\" aria-hidden=\"true\"></span>  View details &raquo;</button>
-                    <div  class=\"modalFrame\">
                     <div  class=\"modal\">
                           <!-- Modal content -->
                           <div class=\"modal-content\">
@@ -80,7 +80,7 @@ session_start();
                               <div class=\"modal-body\">
                                   <p class='ItemHead'>".$row['ItemName']."</p><p>".$row['ItemInfo']."</p>
                                   <img height=\"300\" width=\"300\" class=\"InnerImg\" src=\"".$row['ImgUrl']."\"></div>
-                              <div class=\"modal-footer\"></div></div></div></div></div>";
+                              <div class=\"modal-footer\"></div></div></div></div>";
 
                 if ($i==3){
                     echo "</div>";
