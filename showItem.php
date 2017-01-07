@@ -21,6 +21,7 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jQery.js"></script>
     <script src="js/showItem.js"></script>
+    <script src="js/modal.js"></script>
     <script src="https://use.fontawesome.com/488b28b092.js"></script>
 </head>
 <body>
