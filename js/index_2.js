@@ -1,6 +1,5 @@
 
 $(document).ready(function () {
-    alert('HI');
         $('#send').click(function () {
         if ($('#ItemName').is(':empty')){
             $('.ItemName').addClass('has-error');
