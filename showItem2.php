@@ -28,7 +28,6 @@ if (!isset($_SESSION['UserID'])){
     <script src="https://use.fontawesome.com/488b28b092.js"></script>
 </head>
 <body>
-AAAAAAAAAA此為測試個人頁面AAAAAAAAA
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.php">home</a>
@@ -100,8 +99,25 @@ AAAAAAAAAA此為測試個人頁面AAAAAAAAA
                 echo "</div>";
             }
             ?>
-              <footer class=footer>
-                <p>&copy; Company 2014</footer>
+            <!--  <footer class=footer>
+                <p>&copy; Company 2014</footer>-->
+</body>
+<body>
+<br><br><br><br><br><br><br><br>
+<div id="footer" style="height:150px;background-color:white">
+<br><br><br><br>
+<br><center><a href="https://www.facebook.com/go1515/?fref=ts"><img src="http://imgur.com/hRMl3h5.png"style="weight:45px;height:45px">
+<img src="http://imgur.com/X4Qp67I.jpg" style="weight:52px;height:52px">
+<br>
+<a href="showItem.php">Home&nbsp&nbsp||&nbsp&nbsp</a>
+<a href="test2.php" >Upload&nbsp&nbsp||&nbsp&nbsp</a>
+<a href="showItem2.php">My&nbspList&nbsp&nbsp||&nbsp&nbsp</a>
+<a href="index_team.php">Contact&nbspUs</a>
+<p>phone:06-1515151&nbspemail:1515@gmail.com
+<br>
+Company@2016&nbsp&nbspCreate a platform for you to exchange things</p>
+</center></div>
+                
 
 </body>
 </html>

@@ -53,7 +53,7 @@
 
 <div class="bgimg-4">
   <div class="caption">
-    <span class="border"><a href="index.php">Let's 1515 !</a></span>
+    <span class="border"><a href="showItem.php">Let's 1515 !</a></span>
   </div>
 </div>
 

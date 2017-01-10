@@ -136,3 +136,46 @@ p{
 .like{
     vertical-align: middle;
 }
+#footer{
+  position:absolute;
+  left:0px;
+  bottom:100px;
+  }
+.logo2{
+position:absolute;
+  left:650px;
+  top:51px;
+/*  background-color:white;*/
+
+}
+#home{
+position:absolute;
+  left:350px;
+  top:90px;
+  font-size:30px;
+}
+#upload{
+position:absolute;
+  left:500px;
+    top:90px;
+      font-size:30px;
+      }
+#list{
+position:absolute;
+  left:900px;
+    top:90px;
+      font-size:30px;
+      }
+#us{
+position:absolute;
+  left:1050px;
+    top:90px;
+      font-size:30px;
+      }
+#loginbtn{
+  position:absolute;
+    left:730px;
+        top:570px;
+
+}
+
