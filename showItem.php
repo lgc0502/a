@@ -36,7 +36,7 @@ if (!isset($_SESSION['UserID'])){
         <a href="#">ItemCatalog</a>
     </div>
     <span class="opennav" onclick="openNav()"> &#9776;</span>
-
+    
     <div class=container>
         <div class="masthead">
             <h3 class="text-muted">Project name</h3>
