@@ -1,0 +1,22 @@
+/*#title {
+    height:70px;
+    background-color:white; /* 淡黃色
+    padding:10px;
+}*/
+#logo{
+  position:absolute;
+  top:40px;
+  left:600px;
+  width:300px;
+  height:150px;
+}
+#form{
+  background-color:white;
+  border:100px solid #FFC559;
+
+}
+#fillform{
+  position: absolute;
+  left:300px;
+
+}
