@@ -13,17 +13,15 @@
   <script src="Semantic-UI/dist/semantic.min.js"></script>
 </head>
 
-<body>
-	<div id="mySidenav" class="sidenav">
+<body id="main">
+  <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.php">1515</a>
     <a href="index_team.php">Our Team</a>
-    <a href="index_2.php">exchange now</a>
-    <a>Q and A</a>
+    <a href="test2.php">exchange now</a>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
   
-  <div id="main">
     <div class="eins">
       Hello World<br><br>
       <p>Welcome to Our Innovation</p>
@@ -34,7 +32,7 @@
     <div class="zwei">
       Target<br><br><br>
       <p>Create a platform for you to exchange things<br>
-        <button class="ui inverted teal button"><a href="index_2.php">Go Upload!</a></button>
+        <button class="ui inverted teal button"><a href=".php">Go Upload!</a></button>
       </p>
     </div>
 
@@ -67,7 +65,6 @@
       </div>
       </p>
     </div>
-  </div>
 
 </body>
 </html> 	

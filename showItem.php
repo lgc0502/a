@@ -21,7 +21,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.php">home</a>
         <a href="index_team.php">Our Team</a>
-        <a href="index_2.php">Exchange Now</a>
+        <a href="test2.php">Exchange Now</a>
         <a href="#">ItemCatalog</a>
     </div>
     <span class="opennav" onclick="openNav()"> &#9776;</span>
@@ -187,22 +187,32 @@
                         echo "<div class=col-lg-4>><h2>".$row['ItemName']."</h2>
                     <center>    <img  height=\"200\" width=\"200\" src=\"".$row['ImgUrl']."\"></center>
                     
-                    <button  class=\"itemBtn btn btn-default\"><span class=\"glyphicon glyphicon-list-alt\" aria-hidden=\"true\"></span></button>
-
-
-                    <div  class=\"modal\">
-                          <!-- Modal content -->
-                          <div class=\"modal-content\">
-                              <div class=\"modal-header\">
-                                  <span class=\"close\">×</span>
-                                  <h2><button class=\"ui yellow like button\">Exchange</button></h2>
-                                  <h3 style='display:none'>".$row['OwnedBy']."</h3>
-                                 <h4 style='display:none'>".$row['ItemNO']."</h4>
-                              </div>
-                              <div class=\"modal-body\">
-                                  <p class='ItemHead'>".$row['ItemName']."</p><p>".$row['ItemInfo']."</p>
-                                  <img height=\"300\" width=\"300\" class=\"InnerImg\" src=\"".$row['ImgUrl']."\"></div>
-                              <div class=\"modal-footer\"></div></div></div></div>";
+                    <button  id='itemBtn' class=\"itemBtn btn btn-default\"><span class=\"glyphicon glyphicon-list-alt\" aria-hidden=\"true\"></span>  View details &raquo;</button>
+                    
+                        <div  class='modal' id='myModal'>
+                            <!-- Modal content -->
+                            <div class='modal-content'>
+                                <div class=\"modal-header\">
+                                    <div id='close' class='close'>&times;</div>
+                                    <h2><button class=\"ui yellow like button\">Exchange</button></h2>
+                                    <h4 style='display:none'>".$row['ItemNO']."</h4>
+                                </div>
+                                
+                                <div class=\"modal-body\">
+                                    <modalImage>
+                                        <img height=\"300\" width=\"300\" class=\"InnerImg\" src=\"".$row['ImgUrl']."\">
+                                    </modalImage>
+                                    
+                                    <modalText>
+                                    <p class='ItemHead'>".$row['ItemName']."</p><p>".$row['ItemInfo']."</p>
+                                    </modalText>
+                                </div>
+                                
+                                <div class=\"modal-footer\">
+                                    <h3>".$row['OwnedBy']."<img src='https://github.com/StanleyHuangEE/wp2016/blob/gh-pages/1515.png?raw=true' height=50px width=50px>
+                                    </h3>
+                                </div>
+                    </div></div></div>";
 
                 if ($i==3){
                     echo "</div>";
@@ -217,8 +227,8 @@
                 echo "</div>";
             }
             ?>
-             <!-- <footer class=footer>
-                <p>&copy; Company 2014</footer>--></div>
+             <footer class=footer>
+                <p>&copy; Company 2014</footer></div>
 
 <br><br>
 <div id="footer" style="height:150px;background-color:white">
@@ -229,10 +239,45 @@
 <a href="test2.php" >Upload&nbsp&nbsp||&nbsp&nbsp</a>
 <a href="showItem2.php">My&nbspList&nbsp&nbsp||&nbsp&nbsp</a>
 <a href="index_team.php">Contact&nbspUs</a>
-<p>phone:06-1515151&nbspemail:1515@gmail.com
+<p>phone:06-1515151 email:1515@gmail.com
 <br>
-Company@2016&nbsp&nbspCreate a platform for you to exchange things</p>
+Company@2016 Create a platform for you to exchange things</p>
 </center></div>
+              <footer class=footer>
+              <p>&copy; Company 2014</footer>
+<script>
+
+// Get the modal
+var modalFrame = document.getElementById('myModalFrame');
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("itemBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+
+btn.onclick = function() {
+    modal.style.display = "block";
+    modalFrame.style.display = "block";
+    
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    modalFrame.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalFrame) {
+        modal.style.display = "none";
+        modalFrame.style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>

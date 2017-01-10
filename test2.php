@@ -129,9 +129,9 @@ body, html {
 <a href="test2.php" style="color:white">Upload&nbsp&nbsp||&nbsp&nbsp</a>
 <a href="showItem2.php" style="color:white">My&nbspList&nbsp&nbsp||&nbsp&nbsp</a> 
 <a href="index_team.php" style="color:white">Contact&nbspUs</a>
-<p style="color:white">phone:06-1515151&nbspemail:1515@gmail.com
+<p style="color:white">phone:06-1515151  email:1515@gmail.com
 <br>
-Company@2016&nbsp&nbspCreate a platform for you to exchange things</p>
+Company@2016 create a platform for you to exchange things</p>
 </center></div>
 
 
@@ -140,4 +140,3 @@ Company@2016&nbsp&nbspCreate a platform for you to exchange things</p>
 
 </body>
 </html>
-

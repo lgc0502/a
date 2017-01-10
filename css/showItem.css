@@ -67,6 +67,7 @@ modalText{
 
 /* Modal Footer */
 .modal-footer {
+    height:100px;
     padding: 2px 16px;
     background-color: LightYellow ;
     color: LightPink;

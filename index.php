@@ -16,23 +16,23 @@
 </head>
 
 <body onload="showHint()">
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.php">home</a>
-    <a href="index_team.php">Our Team</a>
-    <a href="index_2.php">Exchange Now</a>
+  <div id="sideNavShadow">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.php">home</a>
+      <a href="index_team.php">Our Team</a>
+      <a href="test2.php">Exchange Now</a>
       <a href="showItem.php">ItemCatalog</a>
+    </div>
   </div>
   <span class="opennav" onclick="openNav()"> &#9776;</span>
 
-  </div>
-  <span class="opennav" onclick="openNav()"> &#9776;</span>
   <div id="main">
     <div id="logo">
     <img src="http://imgur.com/HPtTFUN.png" width="300px" height="150px"/>
     </div>
   
- <!--login button-->
+    <!--login button-->
       <?php
       session_start();
       if(isset($_SESSION['UserName'])){
@@ -70,38 +70,37 @@
       <!--show fb login status-->
 
 	<!---->
-<div id="main">  
- <div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <img src="http://imgur.com/y4oM3Lo.jpg" style="width:100%">
-    <div class="text"></div>
-  </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="http://imgur.com/y4oM3Lo.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <img src="http://imgur.com/kQvREop.jpg" style="width:100%">
-    <div class="text"></div>
-  </div>
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="http://imgur.com/kQvREop.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext"></div>
-    <img src="http://imgur.com/Cdoo5lS.jpg" style="width:100%">
-    <div class="text"></div>
-  </div>
-  <script>
-  currentSlide(1);
-  </script>
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="http://imgur.com/Cdoo5lS.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+        <script>
+          currentSlide(1);
+        </script>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div> </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div> 
 <!--facebook login block-->
 <script>
     // This is called with the results from from FB.getLoginStatus().
@@ -192,9 +191,8 @@
 
 <!--end of facebook login block-->
 
-
+  </div>
 
 </body>
-
 </html>
 

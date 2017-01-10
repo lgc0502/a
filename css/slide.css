@@ -2,9 +2,11 @@
 .slideshow-container {
   max-width: 500px;
   position: relative;
+  z-index:-1;
   margin: auto;
 }
 
+.slideshow-container img{z-index:0;}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;

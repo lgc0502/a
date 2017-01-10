@@ -59,7 +59,7 @@ html[xmlns] .slides {display: block;}
     background: none;
     position: absolute;
     top: 0;
-    z-index: 10;
+    z-index: 1;
     cursor: pointer;
     text-indent: -9999px;
     opacity: 1;
